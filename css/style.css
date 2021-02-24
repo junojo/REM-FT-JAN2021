@@ -9,6 +9,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
+    margin-block: 0.2rem;
 }
 
 h1 {
@@ -39,12 +40,19 @@ h6 {
 
 }
 
+p {
+    line-height: 1.6em;
+    margin-block: 0.6em;
+}
 
 
 
 
 header {
     background-color: darkgray;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
 div {
@@ -74,6 +82,10 @@ button {
     margin: 50px 30px 10px 30px;
 }
 
+#card {
+    justify-content: space-evenly;
+}
+
 img {
     width: 100%;
 }
@@ -89,6 +101,9 @@ img {
     background-image: url('../img/nadin-mario-qFDf9mQK0uQ-unsplash.jpg');
     background-size: cover;
     /* background-position: center; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -97,9 +112,17 @@ img {
 }
 
 #contact {
-    height: 50vh;
+    height: 600px;
+    background-color: coral;
+    /* border: 5px solid black;
+    margin: 100px; */
+    padding: 50px 100px;
 }
 
 footer {
     height: 50vh;
+}
+
+.container {
+    display: flex; /* or inline-flex */
 }
